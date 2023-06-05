@@ -104,7 +104,7 @@ if __name__ == '__main__':
         args.freeze_backbone = False
 
     # Train
-    args.epochs = 2
+    args.epochs = 100
     args.batch_size = 128
     if args.task_name == 'ped_traj':
         args.lr = 1e-2
