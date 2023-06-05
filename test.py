@@ -127,7 +127,7 @@ def predict_traj(model, dataloader, args, dset='test'):
                 dt[vid][pid] = {}
             if fid not in dt[vid][pid]:
                 dt[vid][pid][fid] = {}
-            dt[vid][pid][fid]['traj_pred'] = traj_pred[i].detach().cpu().numpy().tolist()
+            dt[vid][pid][fid]['traj'] = traj_pred[i].detach().cpu().numpy().tolist()
             # print(len(traj_pred[i].detach().cpu().numpy().tolist()))
     # print("saving prediction...")
     with open(os.path.join(args.checkpoint_path, 'results', f'{dset}_traj_prediction.json'), 'w') as f:
@@ -156,7 +156,7 @@ def get_test_traj_gt(model, dataloader, args, dset='test'):
                 gt[vid][pid] = {}
             if fid not in gt[vid][pid]:
                 gt[vid][pid][fid] = {}
-            gt[vid][pid][fid]['traj_gt'] = traj_gt[i].detach().cpu().numpy().tolist()
+            gt[vid][pid][fid]['traj'] = traj_gt[i].detach().cpu().numpy().tolist()
             # print(len(traj_pred[i].detach().cpu().numpy().tolist()))
     with open(os.path.join(f'./test_gt/{dset}_traj_gt.json'), 'w') as f:
         json.dump(gt, f)

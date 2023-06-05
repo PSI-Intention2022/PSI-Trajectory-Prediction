@@ -77,8 +77,8 @@ def evaluate_traj(groundtruth='', prediction='', args=None):
     for vid in gt_traj.keys():
         for pid in gt_traj[vid].keys():
             for fid in gt_traj[vid][pid].keys():
-                gt.append(gt_traj[vid][pid][fid]['traj_gt'])
-                pred.append(pred_traj[vid][pid][fid]['traj_pred'])
+                gt.append(gt_traj[vid][pid][fid]['traj'])
+                pred.append(pred_traj[vid][pid][fid]['traj'])
     gt = np.array(gt)
     pred = np.array(pred)
     traj_results = measure_traj_prediction(gt, pred, args)
