@@ -2,9 +2,13 @@
 # This folder contains the baseline of pedestrian trajectory prediction based on  PSI dataset.
 ([**PSI2.0**](https://github.com/PSI-Intention2022/PSI-Dataset) is an extension dataset based on the [**PSI1.0**](http://situated-intent.net/) dataset.)
 
+### :bookmark: News :
+- 20230606: The official [[Homepage](https://psi-intention2022.github.io)], [[GitHub](https://github.com/PSI-Intention2022/PSI-Competition)], and [[CodaLab]() ([Track 1](https://codalab.lisn.upsaclay.fr/competitions/13808#phases))([Track 2](https://codalab.lisn.upsaclay.fr/competitions/13812?secret_key=7a566b48-693d-47cf-9de8-d43e6b6fa512#phases))([Track 3](https://codalab.lisn.upsaclay.fr/competitions/13818?secret_key=bc6903e6-0a62-4df2-bb14-b31ae7b40a63#participate))] of the IEEE ITSS Student Competition are public. 
+
+---
 
 ## 1. PSI dataset Structure
-Please refer to [PSI dataset]() for the details of PSI dataset and data structure.
+Please refer to [PSI dataset](https://github.com/PSI-Intention2022/PSI-Dataset) for the details of PSI dataset and data structure.
 
 ## 2. Trajectory Prediction Baseline
 (0) Arguments
@@ -80,10 +84,10 @@ FRB:
 ```
 |Dataset|split|ADE|FDE|ARB|FRB|
 |:---|:---|:---|:---|:---|:---|
-|PSI200|val||||
-|PSI200|test||||
-|PSI100|val||||
-|PSI100|test||||
+|PSI 2.0|val||||
+|PSI 2.0|test||||
+|PSI 1.0|val||||
+|PSI 1.0|test||||
 
 
 
