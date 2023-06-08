@@ -1,6 +1,6 @@
 
 # This folder contains the baseline of pedestrian trajectory prediction based on  PSI dataset.
-([**PSI2.0**]() is an extension dataset based on the [**PSI1.0**](http://situated-intent.net/) dataset.)
+([**PSI2.0**](https://github.com/PSI-Intention2022/PSI-Dataset) is an extension dataset based on the [**PSI1.0**](http://situated-intent.net/) dataset.)
 
 
 ## 1. PSI dataset Structure
