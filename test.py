@@ -130,7 +130,7 @@ def predict_traj(model, dataloader, args, dset='test'):
             dt[vid][pid][fid]['traj'] = traj_pred[i].detach().cpu().numpy().tolist()
             # print(len(traj_pred[i].detach().cpu().numpy().tolist()))
     # print("saving prediction...")
-    with open(os.path.join(args.checkpoint_path, 'results', f'{dset}_traj_prediction.json'), 'w') as f:
+    with open(os.path.join(args.checkpoint_path, 'results', f'{dset}_traj_pred.json'), 'w') as f:
         json.dump(dt, f)
 
 
