@@ -34,7 +34,7 @@ def main(args):
     if not os.path.exists(val_gt_file):
         get_test_traj_gt(model, val_loader, args, dset='val')
     predict_traj(model, val_loader, args, dset='val')
-    score = evaluate_traj(val_gt_file, args.checkpoint_path + '/results/val_traj_prediction.json', args)
+    score = evaluate_traj(val_gt_file, args.checkpoint_path + '/results/val_traj_pred.json', args)
 
     # ''' 4. Test '''
     # test_gt_file = './test_gt/test_traj_gt.json'
