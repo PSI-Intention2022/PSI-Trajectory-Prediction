@@ -110,7 +110,8 @@ def measure_traj_prediction(target, prediction, args):
         'FRB': {'0.5': 0, '1.0': 0, '1.5': 0},  # bbox - B: bbox
     }
     bs, ts, _ = target.shape
-    performance_MSE = np.square(target - prediction).sum(axis=2)  # n_samples x ts x 4 --> bs x ts
+    # Error: performance_MSE = np.square(target - prediction).sum(axis=2)  # n_samples x ts x 4 --> bs x ts
+    performance_MSE = np.square(target - prediction).mean(axis=2)
     performance_RMSE = np.sqrt(performance_MSE)  # bs x ts
     for t in [0.5, 1.0, 1.5]:
         end_frame = int(t * args.fps)
